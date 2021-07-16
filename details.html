@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Read more</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <center>
+            <img src="cv.png">
+            <h3>Skills</h3>
+          </center>
+        </div>
+        <div class="content">
+            <h3>C</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>Java</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>Python</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>IOT Applications</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>Artificial Intelligence</h3>
+            <p>🟊🟊☆☆☆</p><br>
+            <h3>SQL</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>Machine Learning</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>HTML</h3>
+            <p>🟊🟊🟊☆☆</p><br>
+            <h3>CSS</h3>
+            <p>🟊🟊☆☆☆</p><br>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <center>
+            <img src="education.png">
+            <h3>Education</h3>
+          </center>
+        </div>
+        <div class="content">
+            <h3>B.E.(Telecommunication Engg.)</h3>
+            <p>University: Dayananda Sagar College Of Engineering <br>
+            Aggregate CGPA : 9.17<br>
+            Year of passing : 2021</p>
+            <h3>XII/PUC</h3>
+            <p>University : PES PU College<br>
+            Percentage : 94.17%<br>
+            Year of passing : 2017</p>
+            <h3>10th/SSLC</h3>
+            <p>University : Mahila Mandali High School<br>
+            Percentage : 95.36%<br>
+            Year of passing : 2015</p></li>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <center>
+            <img src="internship.png">
+            <h3>Internships</h3>
+          </center>
+        </div>
+        <div class="content">
+          <h3>Training on Industrial Automation Technology</h3>
+          <p>Company : Bosch Rexroth<br>
+          Duration : 30 days<br>
+          Scope : Importance of automation, Programmable Logic Controllers (PLC) and implementation of the prototype like Pipe bending, Gate Control and bending tool using PLC.</p>
+          <h3>Data Analytics Internship</h3>
+          <p>Company : The Shaadi Times<br>
+          Duration : 60 days<br>
+          Designation : Data Analyst Intern<br>
+          Scope : Worked as data analyst intern.
+          Did data analysis on the given domain from the existing data and gave insights on the same.</p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <center>
+            <img src="project.png">
+            <h3>Projects</h3>
+          </center>
+        </div>
+        <div class="content">
+          <h3>A Web Application for the Conversion of Sign Language into Text and Multilingual Speech using Deep Learning</h3>
+          <p>This system is designed in Streamlit to recognize the sign language for single handed Indian Sign Language and
+            the American Sign Language and also to recognize numbers. The recognized labels are concatenated to get the
+            meaningful text along with the translated text and audio output.</p>
+          <h3>Dog breed identification model using deep neural networks</h3>
+          <p>This model is trained using transfer learning technique to identify dog breeds.</p>
+          <h3>Machine learning models</h3>
+          <p>Some of the regression and classification models are trained for datasets
+            such as iris specie identification model, bulldozer dataset, heart disease predictor model.</p>
+          <h3>Soldier safety system</h3>
+          <p>To build a safety device for soldiers that could track their location as well as
+            health status to notify their families and the control office with real time status of soldiers.</p>
+          <h3>Frequency Counter using Arduino</h3>
+          <p>A simple digital frequency counter designed which comes in handy
+            to measure the frequency of incoming signal without the need of oscilloscope.</p>
+        </div>
+          <a class="more"></a>
+      </div>
+    </div>
+    <script>
+      let more = document.querySelectorAll('.more');
+      for(let i=0; i<more.length; i++)
+      {
+        more[i].addEventListener('click',function(){
+          more[i].parentNode.classList.toggle('active')
+        })
+      }
+
+    </script>
+  </body>
+</html>

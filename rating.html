@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smiley Rating Bar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bird-container">
+      <img src="transparentFlyingBird.gif" class="bird">
+    </div>
+    <div class="rating" id="div">
+
+      <input type="radio" name="star" id="star2">
+      <label for="star2">
+        <img onclick="DisplayText(2)" src="angry.png">
+        <h4>Hated It</h4>
+      </label>
+
+      <input type="radio" name="star" id="star5">
+      <label for="star5">
+        <img onclick="DisplayText(5)" src="dead.png">
+        <h4>Scary</h4>
+      </label>
+      <input type="radio" name="star" id="star1" checked="checked">
+      <label for="star1">
+        <img onclick="DisplayText(1)" src="cool.png">
+        <h4>Loved It</h4>
+      </label>
+      <input type="radio" name="star" id="star3">
+      <label for="star3">
+        <img onclick="DisplayText(3)" src="sad.png">
+        <h4>Not Bad</h4>
+      </label>
+      <input type="radio" name="star" id="star4">
+      <label for="star4">
+        <img onclick="DisplayText(4)" src="shocked.png">
+        <h4>Wow</h4>
+      </label>
+      <h2 class="text">Did You like My Website?</h2>
+    </div>
+    <script>
+      function DisplayText(value) {
+        var div = document.getElementById("div");
+        var text = "";
+
+        if (value == 2) text += "Your Life Must Be Boring!";
+        if (value == 5) text += "Don't be scared to try something new!";
+        if (value == 1) text += "Thanks for the feedback, I'm glad you loved my website!";
+        if (value == 3) text += "Thanks for the feedback!";
+        if (value == 4) text += "Thanks for the feedback, I'm glad you are mesmerised by my website!";
+
+        div.innerHTML = text;
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Srilakshmi A K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="bird-container">
+      <img src="transparentFlyingBird.gif" class="bird">
+    </div>
+    <div class="main-card">
+      <div class="imgBox">
+        <img src="cc4.jpg">
+        <img src="cc1.jpg">
+        </div>
+        <div class="details">
+          <div class="content">
+            <div class="counter">
+                <div class="head">Total Website Visit</div>
+                <div class="count">00</div>
+                <a href="rating.html" >
+                    <button class="button1">Rate this website!</button>
+                </a>
+            </div>
+            <div class="text1">
+              <h2><center>Srilakshmi A  K <br><span>Telecommunication Engineer</span><center></h2>
+              <a href="SRILAKSHMI-A-K_DSCE _BANGALORE.pdf" download="my-app">
+                  <center><button class="button1">Resume</button></center>
+              </a>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009873752773"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/Srilakshmikris"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/srilakshmi411/1/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://github.com/srilakshmi0411"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="mail.html">
+              <i class="fa fa-envelope"></i>
+              </a>
+              <a href="details.html" class="more-info">
+                <i class="fa fa-user"></i>
+              </a>
+            </div>
+          </div>
+        </div><br><br>
+        <!-- <div class="text1">
+          <h2><center>Srilakshmi A  K <br><span>Telecommunication Engineer</span><center></h2>
+        </div>
+      </div> -->
+      <script>
+        // Creating namespace
+        // https://api.countapi.xyz/create?namespace=Visitors.com&key=Count&value=0
+        //get namespace
+        // https://api.countapi.xyz/get/Visitors.com/Count
+        //update counter
+        // https://api.countapi.xyz/update/Visitors.com/Count/?amount=1
+        function updateCounter() {
+            fetch('https://api.countapi.xyz/update/Visitors.com/Count/?amount=1')
+                .then(res => res.json())
+                .then(data => counterElement.innerHTML = data.value)
+        }
+
+        updateCounter()
+        counterElement = document.getElementsByClassName('count')[0];
+      </script>
+  </body>
+</html>
